@@ -1,0 +1,465 @@
+﻿OBJECTID,ROUTEPATTERN,AGENCYNAME,ROUTENAME,ROUTENUMBER,MODE,Shape__Length
+31489,01001,PC,Northwest To City Centre Via Motorway,WX1,Bus,19887.6415787348
+31490,01002,PC,City Centre To Northwest Via Motorway,WX1,Bus,19953.5217279213
+31491,01105,NZB,Northwest To City Centre Via Triangle Rd,11T,Bus,20842.4887866105
+31492,01106,NZB,City Centre To Northwest Via Triangle Rd,11T,Bus,20710.9066781517
+31493,01107,NZB,Northwest To City Centre Via Waimumu Rd,11W,Bus,22749.2607506835
+31494,01108,NZB,City Centre To Northwest Via Waimumu Rd,11W,Bus,22585.1713056586
+31495,01302,PC,Te Atatu Peninsula Loop To Henderson,13,Bus,17012.320990765
+31496,01403,NZB,Lincoln Rd To New Lynn Via Henderson,14,Bus,11266.305192213
+31497,01404,NZB,New Lynn to Lincoln Rd via Henderson,14,Bus,11445.7350347438
+31498,01803,NZB,New Lynn To City Centre Via Great North Rd,18,Bus,12830.4943647694
+31499,01804,NZB,City Centre To New Lynn Via Great North Rd,18,Bus,12925.4611398872
+31500,01806,NZB,City Centre To Henderson Via Great North Rd,18,Bus,20038.3431306137
+31501,02005,NZB,St Lukes To Wynyard Quarter Via Kingsland,20,Bus,7859.6868854057
+31502,02006,NZB,Wynyard Quarter To St Lukes Via Kingsland,20,Bus,7862.09315256661
+31503,02201,NZB,Rosebank Rd To City Centre Via New North Rd,22R,Bus,14420.4277065208
+31504,02202,NZB,City Centre To Rosebank Rd Via New North Rd,22R,Bus,14356.1042937949
+31505,02203,NZB,New Lynn To City Centre Via New North Rd,22N,Bus,13337.6585049485
+31506,02204,NZB,City Centre To New Lynn Via New North Rd,22N,Bus,13627.1942386885
+31507,02401,NZB,New Lynn To City Centre Via Sandingham Rd,24R,Bus,14592.881098666
+31508,02402,NZB,City Centre To New Lynn Via Sandringham Rd,24R,Bus,14443.2412286983
+31509,02403,NZB,New Lynn And Blockhouse Bay To City Centre Via Sandingham Rd,24B,Bus,15902.5674375391
+31510,02404,NZB,City Centre To Blockhouse Bay New Lynn Via Sandringham Rd,24B,Bus,15777.9960483217
+31511,02405,NZB,Blockhouse Bay To City Centre Via Sandingham Rd,24B,Bus,13158.7946653581
+31512,02406,NZB,City Centre To Blockhouse Bay Via Sandringham Rd,24B,Bus,13105.6082817044
+31513,02503,NZB,Lynfield To City Centre Via Dominion Rd,25L,Bus,14746.4086955977
+31514,02504,NZB,City Centre To Lynfield Via Dominion Rd,25L,Bus,14279.2613293128
+31515,02505,NZB,Blockhouse Bay To City Centre Via Dominion Rd,25B,Bus,13005.4378435486
+31516,02506,NZB,City Centre To Blockhouse Bay Via Dominion Rd,25B,Bus,12671.0076627503
+31517,02702,NZB,Britomart To Waikowhai Via Mt Eden Rd,27W,Bus,12888.5316326464
+31518,02704,NZB,Britomart To Waikowhai Via Mt Eden Rd And Hillsborough Rd,27H,Bus,12641.4990289466
+31519,02705,NZB,Waikowhai To Britomart Via Mt Eden Rd,27W,Bus,13247.1886839649
+31520,02707,NZB,Waikowhai To Britomart Via Hillsborough Rd And Mt Eden Rd,27H,Bus,12990.4671077145
+31521,02710,NZB,Britomart To Three Kings Via Mt Eden Rd,27T,Bus,8239.87648809965
+31522,02717,NZB,Three Kings To Britomart Via Mt Eden Rd,27T,Bus,8708.61136605537
+31523,03007,NZB,Onehunga To City Centre Via Manukau Rd,30,Bus,10675.7847449332
+31524,03008,NZB,City Centre To Onehunga Via Manukau Rd,30,Bus,11518.4560360861
+31525,03101,GBT,Mangere Town Centre To Botany Town Centre Via Otara,31,Bus,17453.0434975193
+31526,03102,GBT,Botany Town Centre To Mangere Town Centre Via Otara,31,Bus,15650.6480955387
+31527,03201,GBT,Mangere Town Centre To Sylvia Park Via Otahuhu,32,Bus,12458.9582246369
+31528,03202,GBT,Sylvia Park To Mangere Town Centre Via Otahuhu,32,Bus,12675.0158133329
+31529,03301,RTH,Papakura Interchange To Otahuhu Station Via Great South Rd,33,Bus,20543.5888797564
+31530,03302,RTH,Otahuhu Station to Papakura Interchange Via Great South Rd,33,Bus,20579.1948994749
+31531,03503,HE,Ormiston To Botany Via Chapel Rd,35,Bus,7925.37102633587
+31532,03505,HE,Manukau Bus Station To Botany Via Chapel Rd And Ormiston,35,Bus,13650.3497628494
+31533,03508,HE,Botany To Manukau Bus Station Via Chapel Rd And Ormiston,35,Bus,13378.9762504076
+31534,03510,HE,Botany To Manukau Bus Station Via Chapel Rd And Ormiston Rd,35,Bus,13378.9762504076
+31535,03601,GBT,Manukau to Onehunga via Mangere Town Centre,36,Bus,19095.3972878275
+31536,03602,GBT,Onehunga To Manukau Via Mangere Town Centre,36,Bus,18878.2942682412
+31537,03803,GBT,Airport To Onehunga Via Mangere Town Centre,38,Bus,17580.9583770318
+31538,03804,GBT,Onehunga To Airport Via Mangere Town Centre,38,Bus,14953.9505270789
+31539,05001,WBC,Onetangi (Seventh Ave) To Matiatia Wharf,50A,Bus,12029.5397742558
+31540,05002,WBC,Matiatia Wharf To Onetangi (Seventh Ave),50A,Bus,12087.7094618858
+31541,05003,WBC,Onetangi (Fourth Ave) to Matiatia Wharf,50B,Bus,11179.8509896628
+31542,05004,WBC,Matiatia Wharf To Onetangi (Fourth Ave),50B,Bus,11785.8000663313
+31543,05011,WBC,Onetangi (Waiheke Rd) To Matiatia Wharf,50A,Bus,14145.4591278899
+31544,05012,WBC,Matiatia Wharf To Onetangi (Waiheke Rd),50A,Bus,14214.5174024008
+31545,06401,NZB,Newmarket To Kingsland Via Mt Eden And Valley Rd,64,Bus,9916.49924065407
+31546,06601,PC,Pt Chevalier Beach To Sylvia Park Via Mt Albert Rd,66,Bus,18791.7875634375
+31547,06602,PC,Sylvia Park To Pt Chevalier Beach Via Mt Albert Rd,66,Bus,18575.5208175437
+31548,06803,NZB,New Lynn To Onehunga,68,Bus,12396.6548390478
+31549,06804,NZB,Onehunga To New Lynn,68,Bus,12388.5353628082
+31550,07005,HE,Botany To Britomart Via Panmure,70,Bus,21667.0711698787
+31551,07006,HE,Britomart To Botany Via Panmure,70,Bus,21076.8873950927
+31552,07007,HE,Ellerslie To Britomart,70,Bus,9739.78423867537
+31553,07008,HE,Panmure To Botany,70,Bus,8222.73356427408
+31554,07009,HE,Panmure To Britomart Via Ellerslie,70,Bus,13562.9401739828
+31555,07010,HE,Britomart To Howick And Botany Via Ellerslie And Panmure,70H,Bus,29940.7259115444
+31556,07205,HE,Botany And Howick To Britomart Express Via Panmure And Motor,72X,Bus,31091.2513062628
+31557,07206,HE,Britomart To Howick And Botany Express Via Motorway And Panm,72X,Bus,29718.2872988478
+31558,07207,HE,"Botany And Howick To Panmure Via Chapel Rd, Cook St, And Pak",72C,Bus,15294.9054666425
+31559,07208,HE,"Pamure To Howick And Botany Via Pakuranga Rd, Cook St, and C",72C,Bus,14774.0589415306
+31560,07209,HE,"Botany and Howick to Panmure via Millhouse Dr, Meadowland Dr",72M,Bus,17440.4784913505
+31561,07210,HE,"Pamure to Howick and Botany via Pakuranga Rd, Meadowland Dr",72M,Bus,17097.3254003814
+31562,07401,GBT,Onehunga To Glen Innes Via Panmure,74,Bus,13513.4591396567
+31563,07402,GBT,Glen Innes To Onehunga Via Panmure,74,Bus,14402.9152143137
+31564,07403,GBT,Panmure To Glen Innes,74,Bus,4310.53626908497
+31565,07501,NZB,Glen Innes To Wynyard Quarter Via Remuera Rd,75,Bus,14603.195539071
+31566,07502,NZB,Wynyard Quarter To Glen Innes Via Remuera Rd,75,Bus,14402.3324807946
+31567,07601,NZB,Glen Innes To Britomart Via Orakei,76,Bus,14509.922762875
+31568,07602,NZB,Britomart To Glen Innes Via Orakei,76,Bus,14538.9833964914
+31569,07701,NZB,Glen Innes To Britomart Via St Heliers And Tamaki Dr,TMK,Bus,13850.9356632697
+31570,07702,NZB,Britomart To Glen Innes Via Tamaki Dr And St Heliers,TMK,Bus,14108.8884802969
+31571,08203,NZB,Milford To Mayoral Dr Via Takapuna,82,Bus,12672.5762906546
+31572,08204,NZB,Mayoral Dr To Milford Via Takapuna,82,Bus,12548.4680753379
+31573,08208,NZB,Mayoral Dr To Browns Bay Via Milford and Takapuna,82,Bus,21552.2119380319
+31574,08301,RTH,Massey University To Takapuna Via Browns Bay,83,Bus,23815.7580812156
+31575,08302,RTH,Takapuna To Massey University Via Browns Bay,83,Bus,23634.2341512989
+31576,08303,RTH,Browns Bay To Takapuna Via Mairangi Bay And Busway,83,Bus,14466.0532287102
+31577,08304,RTH,Browns Bay To Massey University Via Albany Station,83,Bus,9389.90864129423
+31578,09401,RTH,Beach Haven To Takapuna via Highbury And Northcote Shops,94,Bus,17138.8870708117
+31579,09402,RTH,Takapuna to Beach Haven via Northcote & Highbury (Full Loop),94,Bus,16848.9575503784
+31580,09404,RTH,Takapuna to Beach Haven via Northcote Shops And Highbury,94,Bus,10312.2266051295
+31581,09406,RTH,Takapuna to Beach Haven & Smales Farm Clockwise (Late Night),94,Bus,21705.0975055572
+31582,09408,RTH,Takapuna To Beach Haven (Late Night),94,Bus,13317.0739436635
+31583,09503,RTH,Bayview To Britomart (Lower Albert St),95B,Bus,17804.3922006714
+31584,09504,RTH,Britomart (Quay St) To Bayview,95B,Bus,12975.957870232
+31585,09506,RTH,Britomart (Quay St) To Bayview (Full Loop),95B,Bus,17727.2611048189
+31586,09511,RTH,Constellation Station To Britomart (Albert St) Via Glenfield,95C,Bus,16045.1679167324
+31587,09512,RTH,Britomart (Quay St) to Constellation Station via Glenfield,95C,Bus,15707.9231303493
+31588,09703,RTH,Beach Haven To Britomart (Lower Albert St),97R,Bus,17392.4227258934
+31589,09704,RTH,Britomart (Quay St) To Beach Haven,97R,Bus,10581.7561530081
+31590,09705,RTH,Beach Haven To Britomart (Lower Albert) via Highbury Bypass,97R,Bus,17074.1857679261
+31591,09706,RTH,Britomart (Quay St) To Beach Haven Via Rangatira Rd,97R,Bus,17118.4870982569
+31592,09708,RTH,Britomart (Quay St) To Beach Haven Via Highbury & Rangatira,97R,Bus,16820.0653683353
+31593,09711,RTH,Beach Haven to Britomart (Lower Albert St),97B,Bus,17383.7658749412
+31594,09712,RTH,Britomart (Quay St) To Verrans Corner,97B,Bus,10581.7561530081
+31595,09713,RTH,Beach Haven To Britomart (Lower Albert) Via Highbury Bypass,97B,Bus,17065.5289169738
+31596,09714,RTH,Britomart (Quay St) To Beach Haven Via Birkdale Rd,97B,Bus,17116.4879055457
+31597,09716,RTH,Britomart (Quay St) To Beach Haven Via Highbury Bypass,97B,Bus,16818.0661756241
+31598,10018,GBT,"City To Otara Via Manukau Rd, Onehunga, Mangere, Papatoetoe",N10,Bus,27257.9197635724
+31599,10101,NZB,Pt Chevalier To Auckland University Via Jervois Rd,101,Bus,9213.94137886441
+31600,10102,NZB,Auckland University To Pt Chevalier Via Jervois Rd,101,Bus,9055.03399105454
+31601,10501,NZB,Westmere To Britomart Via Richmond Rd,105,Bus,8168.44731048608
+31602,10502,NZB,Britomart To Westmere Via Richmond Rd,105,Bus,8435.37845851034
+31603,10601,NZB,Freemans Bay Loop,106,Bus,5424.06260367302
+31604,11101,PC,Royal Heights Loop,111,Bus,8208.44805580776
+31605,11110,ATMB,Britomart To Swanson Western Rail Bus,RBW,Bus,31936.4755345214
+31606,11111,ATMB,Swanson To Britomart Western Rail Bus,RBW,Bus,31821.2872125287
+31607,11116,ATMB,Britomart To Newmarket Western Rail Bus,RBW,Bus,4202.18895677139
+31608,11117,ATMB,Newmarket To Britomart Western Rail Bus,RBW,Bus,3622.20844482233
+31609,11118,ATMB,Henderson To Swanson Western Rail Bus,RBW,Bus,6906.33279892853
+31610,11121,ATMB,Swanson To New Lynn Western Rail Bus,RBW,Bus,16315.1026975376
+31611,11124,ATMB,New Lynn To Swanson Western Rail Bus,RBW,Bus,16235.8467158597
+31612,11201,PC,Hob Pt Wharf To Northwest Via W Harbour,112,Bus,9934.80925299709
+31613,11202,PC,Northwest To Hob Pt Wharf Via W Harbour,112,Bus,10055.2126746355
+31614,11401,PC,Hob Pt Wharf To Northwest Via Whenuapai,114,Bus,16337.4452681422
+31615,11402,PC,Northwest To Hob Pt Wharf Via Whenuapai,114,Bus,16454.2718727647
+31616,11601,PC,West Hills Loop,116,Bus,5493.71151893952
+31617,12003,RTH,Henderson To Constellation Station Via Westgate,120,Bus,25757.3626517832
+31618,12004,RTH,Constellation Station To Henderson Via Westgate,120,Bus,26126.8899818144
+31619,12009,RTH,Westgate To Constellation Station,120,Bus,16937.0465533368
+31620,12010,RTH,Constellation To Westgate,120,Bus,17249.3819691221
+31621,12011,RTH,Henderson To Westgate,120,Bus,8820.31609844633
+31622,12012,RTH,Akoranga To Westgate,120,Bus,23454.6512342511
+31623,12013,RTH,Henderson To Akoranga,120,Bus,32292.6419456615
+31624,12014,RTH,Akoranga To Henderson,120,Bus,32332.1592469434
+31625,12015,RTH,Westgate To Akoranga,120,Bus,23472.3258472151
+31626,12201,NZB,Huapai North To Westgate Via Kumeu,122,Bus,11787.848889617
+31627,12202,NZB,Westgate To Huapai North Via Kumeu,122,Bus,12169.2716817735
+31628,12301,NZB,Huapai Triangle To Westgate Via Kumeu,123,Bus,16362.2764899721
+31629,12302,NZB,Westgate to Huapai Triangle via Kumeu,123,Bus,13044.9619755553
+31630,12501,NZB,Helensville To Westgate Via Kumeu,125,Bus,38410.5738529539
+31631,12502,NZB,Westgate To Helensville Via Kumeu,125,Bus,38237.1966206083
+31632,12601,PC,Albany To Westgate Via Riverhead,126,Bus,27037.1265131368
+31633,12602,PC,Westgate To Albany Via Riverhead,126,Bus,27250.4999432329
+31634,12603,PC,Riverhead To Westgate,126,Bus,9322.81331380695
+31635,12801,NZB,Hibiscus Coast Station To Helensville,128,Bus,30045.6167774733
+31636,12802,NZB,Helensville To Hibiscus Coast Station,128,Bus,29969.3791761118
+31637,13201,PC,Te Atatu Peninsula Loop To City Centre,132,Bus,19575.7339828591
+31638,13206,PC,City Centre To Te Atatu Peninsula Loop,132,Bus,18820.9505793116
+31639,13501,PC,Te Atatu (Totara Rd) To Henderson,135,Bus,8637.72197923111
+31640,13502,PC,Henderson To Te Atatu (Totara Rd),135,Bus,9414.93633645299
+31641,14301,PC,Ranui to Henderson via Sturges Rd,143,Bus,6936.75242283469
+31642,14302,PC,Henderson to Ranui via Sturges Rd,143,Bus,7699.26244633576
+31643,14501,PC,Lincoln Rd To Henderson Via Western H,145,Bus,12938.5658934823
+31644,14502,PC,Henderson To Lincoln Rd Via Western H,145,Bus,12971.7286445213
+31645,14701,PC,Waitakere Township To Henderson,147,Bus,13823.40096753
+31646,14702,PC,Henderson To Waitakere Township,147,Bus,13227.1727395802
+31647,14801,PC,Ranui To Lincoln Rd,148,Bus,4226.0027823825
+31648,14802,PC,Lincoln Rd To Ranui,148,Bus,5296.89194942625
+31649,14901,PC,Ranui To New Lynn Via Rosebank,149,Bus,15573.5291316533
+31650,14902,PC,New Lynn To Ranui Via Rosebank,149,Bus,15801.4496540083
+31651,15201,PC,Henderson to New Lynn via Sunnyvale and Glen Eden,152,Bus,13868.2719500174
+31652,15202,PC,New Lynn to Henderson via Glen Eden and Sunnyvale,152,Bus,13984.3483488333
+31653,15405,PC,Henderson to New Lynn via Glen Eden,154,Bus,13948.5271157089
+31654,15406,PC,New Lynn to Henderson via Glen Eden,154,Bus,14057.2814075739
+31655,16101,RTH,Brains Park to New Lynn,161,Bus,5150.02950829287
+31656,16102,RTH,New Lynn to Brains Park,161,Bus,4148.82984941082
+31657,16201,NZB,Henderson to New Lynn via Glendene,162,Bus,10026.5039493373
+31658,16202,NZB,New Lynn to Henderson via Glendene,162,Bus,9989.89086789312
+31659,17027,RTH,Titirangi South to New Lynn,170,Bus,7828.63086667369
+31660,17028,RTH,New Lynn to Titirangi South,170,Bus,7848.59853152634
+31661,17030,RTH,New Lynn to Titirangi South via Otitori Bay Rd,170,Bus,9356.75167651638
+31662,17105,RTH,Laingholm To New Lynn,171,Bus,16026.9278458124
+31663,17116,RTH,New Lynn To Laingholm Loop,171,Bus,20455.282773268
+31664,17205,RTH,Glen Eden to New Lynn via Titirangi,172,Bus,8762.99855761239
+31665,17208,RTH,New Lynn to Glen Eden via Titirangi,172,Bus,9061.8217589964
+31666,18603,RTH,South Lynn Loop,186,Bus,5995.06712625258
+31667,19101,RTH,Lynfield To New Lynn Via Blockhouse Bay And Avondale,191,Bus,16974.7636982477
+31668,19102,RTH,New Lynn To Lynfield Via Avondale And Blockhouse Bay,191,Bus,16842.4667557302
+31669,19507,RTH,New Lynn To City Centre Via Green Bay,195,Bus,20882.6957860472
+31670,19508,RTH,City Centre To New Lynn Via Green Bay,195,Bus,21227.4159488877
+31671,19509,RTH,New Lynn To Blockhouse Bay Via Green Bay,195,Bus,7494.85534811705
+31672,20007,TZG,Hibiscus Coast Station To Auckland Universities,NX2,Bus,31853.8190851303
+31673,20008,TZG,Auckland Universities To Albany Station Via Wellesley St,NX2,Bus,18575.2940643819
+31674,20016,TZG,Auckland Universities To Hibiscus Coast Stn,NX2,Bus,31998.2557139031
+31675,20023,TZG,Albany Station To Auckland Universities Via Wellesley St,NX2,Bus,18962.4757336949
+31676,20903,RTH,Titirangi to City Centre via Green Bay and New North Rd,209,Bus,17202.9879370993
+31677,20904,RTH,City Centre to Titirangi via New North Rd and Green Bay,209,Bus,17561.8092333548
+31678,22212,ATMB,Britomart To Papakura Southern Rail Bus,RBS,Bus,37500.4963523145
+31679,22213,ATMB,Papakura To Britomart Southern Rail Bus,RBS,Bus,37784.7545448669
+31680,22216,ATMB,Otahuhu To Papakura Southern Rail Bus,RBS,Bus,21587.7635348754
+31681,22217,ATMB,Papakura To Otahuhu Southern Rail Bus,RBS,Bus,21901.2974752979
+31682,22226,ATMB,Britomart To Newmarket Southern Rail Bus,RBS,Bus,3799.08562978898
+31683,22227,ATMB,Newmarket To Britomart Southern Rail Bus,RBS,Bus,3693.09291795165
+31684,22232,ATMB,Britomart To Otahuhu Southern Rail Bus,RBS,Bus,15604.293696962
+31685,22235,ATMB,Otahuhu To Britomart Southern Rail Bus,RBS,Bus,15514.0296642499
+31686,22245,ATMB,Puhinui To Britomart Via Newmarket South Express Rail Bus,RBSX,Bus,27295.6218997654
+31687,22248,ATMB,Britomart To Puhinui Via Newmarket South Express Rail Bus,RBSX,Bus,24269.0303023715
+31688,25201,NZB,Lynfield To Civic Centre Via Dominion Rd,252,Bus,13614.4972325848
+31689,25202,NZB,Civic Centre To Lynfield Via Dominion Rd,252,Bus,13458.2323976846
+31690,25301,NZB,Blockhouse Bay To Civic Centre Via Dominion Rd,253,Bus,11873.5263805357
+31691,25302,NZB,Civic Centre To Blockhouse Bay Via Dominion Rd,253,Bus,11849.9787311221
+31692,27001,RTH,Albany Station To Britomart (Lower Albert St),NX1,Bus,17822.2781198824
+31693,27002,RTH,Britomart (Lower Albert St) To Albany Station,NX1,Bus,18278.3644243076
+31694,27003,RTH,Hibiscus Coast Station To Britomart (Lower Albert St),NX1,Bus,30767.1454017276
+31695,27004,RTH,Britomart (Lower Albert St) To Hibiscus Coast Station,NX1,Bus,31701.3260738287
+31696,27007,RTH,Hibiscus Coast Station To Britomart (Lower Albert) AM Peak,NX1,Bus,30767.1454017276
+31697,27012,RTH,Smales Farm To Hibiscus Coast Station,NX1,Bus,21920.8077665906
+31698,29501,NZB,Ellerslie Station To City Centre Via Royal Oak,295,Bus,15662.4477702834
+31699,29502,NZB,City Centre To Ellerslie Station Via Royal Oak,295,Bus,15321.0847195223
+31700,29503,NZB,Ellerslie Station To Royal Oak,295,Bus,5913.39292222598
+31701,29504,NZB,Royal Oak To Ellerslie Station,295,Bus,4943.71148600379
+31702,29505,NZB,Royal Oak To City Centre,295,Bus,9749.05484805747
+31703,29506,NZB,City Centre To Royal Oak,295,Bus,10384.2655313534
+31704,29801,GBT,Onehunga To Sylvia Park Via Ellerslie,298,Bus,12426.1111405328
+31705,29802,GBT,Sylvia Park To Onehunga Via Ellerslie,298,Bus,12755.7295266284
+31706,30901,GBT,Mangere Town Centre To City Centre,309,Bus,25402.8117904993
+31707,30902,GBT,City Centre To Mangere Town Centre,309,Bus,25026.8232413123
+31708,30903,GBT,Mangere Town Centre To City Centre (Express),309X,Bus,23224.4882341423
+31709,30904,GBT,City Centre To Mangere Town Centre Express,309X,Bus,23690.0537026036
+31710,31303,GBT,Mangere To Manukau Bus Station Via Papatoetoe,313,Bus,12573.924325962
+31711,31304,GBT,Manukau Bus Station To Mangere Via Papatoetoe,313,Bus,12120.8296474684
+31712,31403,GBT,Ormiston To Middlemore Station Via Otara,314,Bus,10497.5068629244
+31713,31404,GBT,Middlemore Station To Ormiston Via Otara,314,Bus,10571.7706055063
+31714,32101,NZB,Middlemore Station To Britomart Via Greenlane Hospital,321,Bus,22224.0469152953
+31715,32102,NZB,Britomart To Middlemore Station Via Greenlane Hospital,321,Bus,21995.5083885807
+31716,32103,NZB,Middlemore Station To Ellerslie Station Via Otahuhu,321,Bus,10763.9711209696
+31717,32301,GBT,Otahuhu Station To Panmure Via Panama Rd,323,Bus,11446.7434318222
+31718,32302,GBT,Panmure To Otahuhu Station Via Panama Rd,323,Bus,11393.746054484
+31719,32411,GBT,Mangere Town Centre To Seaside Park Via Otahuhu,324,Bus,11389.5748871533
+31720,32412,GBT,Seaside Park To Mangere Town Centre Via Otahuhu,324,Bus,11431.1209544661
+31721,32503,GBT,Mangere Town Ctr To Manukau Station Via Otahuhu & Otara,325,Bus,22363.1134595738
+31722,32504,GBT,Manukau Bus Station To Mangere Town Ctr Via Otara & Otahuhu,325,Bus,22378.5426793764
+31723,32601,GBT,Mangere Town Centre To Otahuhu Station Via Tidal Road,326,Bus,10878.507917808
+31724,32602,GBT,Otahuhu Station To Mangere Town Centre Via Tidal Road,326,Bus,10611.4049479703
+31725,33302,NZB,Britomart To Otahuhu Limited Stops Via Great South Rd,333X,Bus,16189.6776243328
+31726,35103,HE,Botany To Otahuhu Station Via Highbrook,351,Bus,13650.6699367618
+31727,35104,HE,Otahuhu Station To Botany Via Highbrook,351,Bus,13933.8637477484
+31728,35203,HE,Manukau Bus Station To Panmure Via East Tamaki,352,Bus,20900.3691463989
+31729,35204,HE,Panmure To Manukau Bus Station Via East Tamaki,352,Bus,21113.2795656844
+31730,35303,HE,Manukau Bus Station To Botany Town Centre Via Preston Rd,353,Bus,11188.9183002005
+31731,35304,HE,Botany Town Centre To Manukau Bus Station Via Preston Rd,353,Bus,11156.8341444699
+31732,35503,HE,Ormiston To Botany Via Mission Heights,355,Bus,10721.1137086826
+31733,35504,HE,Botany To Manukau Bus Station Via Mission Heights & Ormiston,355,Bus,16125.6533912712
+31734,35505,HE,Manukau Bus Station To Botany Via Ormiston & Mission Heights,355,Bus,16559.4222784867
+31735,36101,RTH,Manurewa Interchange To Otara / Mit Via Mahia Rd,361,Bus,21938.9166915458
+31736,36102,RTH,Otara / Mit To Manurewa Interchange Via Mahia Rd,361,Bus,22150.6378252306
+31737,36104,RTH,MIT To Manurewa Interchange Via Mahia Rd,361,Bus,14591.1401098815
+31738,36203,RTH,Weymouth To Manukau Bus Station Via Great South Rd,362,Bus,12238.8732037956
+31739,36204,RTH,Manukau Bus Station To Weymouth Via Great South Rd,362,Bus,11171.0405557808
+31740,36302,RTH,Manurewa Interchange To Wattle Downs Loop,363,Bus,10380.3630880934
+31741,36503,RTH,Papakura Interchange To Manukau Bus Station Via Porchester,365,Bus,18127.2914709251
+31742,36504,RTH,Manukau Bus Station To Papakura Interchange Via Porchester,365,Bus,17947.5798479835
+31743,36605,RTH,Manurewa Interchange To Manukau Bus Station Via The Gardens,366,Bus,13096.4003408086
+31744,36606,RTH,Manukau Bus Station To Manurewa Via The Gardens,366,Bus,13498.3641477615
+31745,37202,RTH,Papakura Shops To Keri Hill Loop,372,Bus,6670.24325280883
+31746,37301,RTH,Red Hill To Papakura Shops,373,Bus,6307.94259613385
+31747,37302,RTH,Papakura Shops To Red Hill,373,Bus,6775.55457516489
+31748,37604,RTH,Papakura Shops To Auranga Dr Via Drury,376,Bus,11215.1031145162
+31749,37701,RTH,Pahurehure To Papakura Interchange,377,Bus,5324.04261264853
+31750,37702,RTH,Papakura Interchange To Pahurehure,377,Bus,5154.50943277375
+31751,37802,RTH,Papakura Shops To Karaka Harbourside Loop And Karaka Lakes,378,Bus,11646.5866664104
+31752,38017,GBT,Airport Link Via Puhinui Station,AIR,Bus,17916.8731726936
+31753,39104,RTH,Pukekohe Northeast Loop,391,Bus,7396.29931397164
+31754,39220,RTH,Pukekohe Station To Pukekohe Station,392,Bus,9400.35245674944
+31755,39304,RTH,Pukekohe South Loop,393,Bus,7943.13955471419
+31756,39405,RTH,Pukekohe Station To Papakura Station Via Paerata Rise,394,Bus,21601.0320634721
+31757,39406,RTH,Papakura Station To Pukekohe Station Via Paerata Rise,394,Bus,21406.7372588263
+31758,39501,RTH,Waiuku To Papakura Interchange,395,Bus,35477.770207852
+31759,39502,RTH,Papakura Interchange To Waiuku,395,Bus,34406.6522339573
+31760,39607,RTH,Waiuku To Pukekohe Interchange Via Kitchener Rd And Patumaho,396,Bus,27066.9598126497
+31761,39608,RTH,Pukekohe Interchange To Waiuku Via Patumahoe And Victoria Av,396,Bus,27281.4214686607
+31762,39609,RTH,Pukekohe Interchange To Waiuku Loop Via Patumahoe,396,Bus,37982.2891508383
+31763,39903,RTH,Port Waikato To Pukekohe Interchange Via Tuakau,399,Bus,43949.2347667499
+31764,39904,RTH,Pukekohe To Port Waikato Via Tuakau,399,Bus,44203.1088692488
+31765,44416,ATMB,Newmarket To Onehunga Onehunga Rail Bus,RBO,Bus,11156.470380466
+31766,44417,ATMB,Onehunga To Newmarket Onehunga Rail Bus,RBO,Bus,11416.0342305226
+31767,50101,WBC,Kennedy Point to Matiatia Wharf,501,Bus,8090.39112516775
+31768,50102,WBC,Matiatia Wharf To Kennedy Point,501,Bus,8751.21073217083
+31769,50201,WBC,Rocky Bay to Matiatia Wharf,502,Bus,14658.589205597
+31770,50202,WBC,Matiatia Wharf to Rocky Bay,502,Bus,14485.0096640232
+31771,55512,ATMB,Otahuhu To Manukau Eastern Rail Bus,RBE,Bus,10480.1958788052
+31772,55513,ATMB,Manukau To Otahuhu Eastern Rail Bus,RBE,Bus,10374.9060740632
+31773,55518,ATMB,Britomart To Panmure Eastern Rail Bus,RBE,Bus,18109.6023031505
+31774,55519,ATMB,Panmure To Britomart Eastern Rail Bus,RBE,Bus,18177.5178099546
+31775,55520,ATMB,Britomart To Otahuhu Via All Stations,RBE,Bus,25493.3905107896
+31776,55521,ATMB,Otahuhu To Britomart Via All Stations,RBE,Bus,25724.8460917671
+31777,55524,ATMB,Britomart To Manukau Eastern Rail Bus,RBE,Bus,36282.025510072
+31778,55525,ATMB,Manukau To Britomart Eastern Rail Bus,RBE,Bus,36466.2862536728
+31779,65001,NZB,Pt Chevalier Shops To Glen Innes Via Greenlane,650,Bus,16493.5898287415
+31780,65002,NZB,Glen Innes To Pt Chevalier Shops Via Greenlane And Balmoral,650,Bus,16867.5485751416
+31781,65003,NZB,Selwyn Village To Glen Innes Via Balmoral Rd And Greenlane,650,Bus,18038.0496752711
+31782,65004,NZB,Glen Innes To Selwyn Village Via Greenlane And Balmoral Rd,650,Bus,18684.8292721256
+31783,67011,NZB,New Lynn To Otahuhu Via Avondale Stoddard Rd And Onehunga,670,Bus,21869.8512848217
+31784,67012,NZB,Otahuhu To New Lynn Via Onehunga Stoddard Rd And Avondale,670,Bus,22511.198655221
+31785,71101,GBT,Howick To Panmure Via Cascades Road,711,Bus,13498.3635325553
+31786,71102,GBT,Panmure To Howick Via Cascades Road,711,Bus,13359.1348579652
+31787,71201,GBT,Bucklands Beach To Panmure,712,Bus,13849.7022608729
+31788,71202,GBT,Panmure To Bucklands Beach,712,Bus,13865.0330503477
+31789,71203,GBT,Panmure To Bucklands Beach Loop,712,Bus,21885.5802832149
+31790,72121,NZB,Outer Link Anticlockwise,OUT,Bus,24927.9936756174
+31791,72123,NZB,Outer Link Anticlockwise Newmarket To St Lukes,OUT,Bus,16030.1304458845
+31792,72125,NZB,Outer Link Anticlockwise St Lukes To Victoria St West,OUT,Bus,14335.2668606432
+31793,72127,NZB,Outer Link Anticlockwise Grafton Rd To St Lukes,OUT,Bus,12413.3728872877
+31794,72129,NZB,Outer Link Anticlockwise Jervois Rd To St Lukes,OUT,Bus,8084.47963116314
+31795,72131,NZB,Outer Link Anticlockwise (VP),OUT,Bus,24927.9936756174
+31796,73112,NZB,Outer Link Clockwise,OUT,Bus,24966.4793598545
+31797,73114,NZB,Outer Link Clockwise Herne Bay To City Centre,OUT,Bus,3913.13574957523
+31798,73116,NZB,Outer Link Clockwise St Lukes To City Centre,OUT,Bus,11836.2470542403
+31799,73118,NZB,Outer Link Clockwise Newmarket To City Centre,OUT,Bus,20907.0065147525
+31800,73120,NZB,Outer Link Clockwise (VP),OUT,Bus,24966.4793598545
+31801,73301,GBT,Botany To The Parade Via Highland Park,733,Bus,12586.6903326889
+31802,73302,GBT,Bucklands Beach To Botany Via Highland Park,733,Bus,12198.4549253238
+31803,73303,GBT,Botany To Bucklands Beach Via Highland Park,733,Bus,10052.1982263324
+31804,73401,GBT,Botany To Half Moon Bay Via Highland Park,734,Bus,9427.85784344286
+31805,73402,GBT,Half Moon Bay To Botany Via Highland Park,734,Bus,9260.10859342165
+31806,73501,GBT,Botany To Half Moon Bay Via Cockle Bay And Howick,735,Bus,14372.3512723484
+31807,73502,GBT,Half Moon Bay To Botany Via Howick And Cockle Bay,735,Bus,14211.5676355562
+31808,73901,GBT,Maraetai And Beachlands To Botany Via Whitford And Ormiston,739,Bus,30400.0587909617
+31809,73902,GBT,Botany To Beachlands And Maraetai Via Ormiston And Whitford,739,Bus,28770.5949850289
+31810,74401,GBT,Panmure To St Heliers Via Glen Innes,744,Bus,8713.240229047
+31811,74402,GBT,St Heliers To Panmure Via Glen Innes,744,Bus,8852.60589964732
+31812,74701,GBT,Panmure To Glen Innes Via Stonefields,747,Bus,6600.60926016867
+31813,74702,GBT,Glen Innes To Panmure via Stonefields,747,Bus,6737.27984847115
+31814,74703,GBT,Panmure To Selwyn College via Glen Innes,747,Bus,9189.65152590939
+31815,75101,NZB,Panmure To Newmarket Via Marua Rd And Remuera Rd,751,Bus,8593.35857728557
+31816,75102,NZB,Newmarket To Panmure Via Marua Rd And Remuera Rd,751,Bus,8711.73007589948
+31817,75503,NZB,Benson Rd To Britomart Via Portland Rd,755,Bus,10709.5504900209
+31818,75504,NZB,Britomart To Benson Rd Via Portland Rd,755,Bus,10137.3377809594
+31819,77401,NZB,West Tamaki Rd To Britomart Via Long Dr And Tamaki Dr,774,Bus,11836.558967225
+31820,77402,NZB,Britomart To West Tamaki Rd Via Tamaki Dr And Long Dr,774,Bus,12145.5112931781
+31821,77501,NZB,Glendowie To Britomart Via Tamaki Dr,775,Bus,17355.0052639948
+31822,77502,NZB,Britomart To Glendowie Via Tamaki Dr,775,Bus,15901.8960932505
+31823,78101,NZB,Mission Bay To Museum Via Orakei,781,Bus,12684.8292162607
+31824,78102,NZB,Museum To Mission Bay Via Orakei,781,Bus,12769.8430075535
+31825,78103,NZB,Mission Bay To Newmarket Via Orakei,781,Bus,10851.4151232993
+31826,78104,NZB,Newmarket To Mission Bay Via Orakei,781,Bus,11326.7944847225
+31827,78201,GBT,Sylvia Park To Mission Bay Via Ellerslie And Meadowbank,782,Bus,17612.7710219459
+31828,78202,GBT,Mission Bay To Sylvia Park Via Meadowbank And Ellerslie,782,Bus,17891.378841228
+31829,78301,GBT,Eastern Bays Circuit Clockwise,783,Bus,15609.8544682564
+31830,78302,GBT,Eastern Bays Circuit Anticlockwise,783,Bus,15891.1005971843
+31831,79702,NZB,Wynyard Quarter to Karangahape Rd via Queen St,CTY,Bus,6750.69489179197
+31832,79821,NZB,Inner Link Anticlockwise,INN,Bus,11802.5995790921
+31833,79823,NZB,Inner Link Anticlockwise Newmarket To Victoria Park,INN,Bus,5730.73266751252
+31834,79825,NZB,Inner Link Anticlockwise K Rd To Victoria Park,INN,Bus,8259.21209772243
+31835,79831,NZB,Inner Link Anticlockwise (VP),INN,Bus,11802.5995790921
+31836,79922,NZB,Inner Link Clockwise,INN,Bus,12171.0046891604
+31837,79924,NZB,Inner Link Clockwise Customs St To Victoria Park,INN,Bus,10646.8113305623
+31838,79926,NZB,Inner Link Clockwise Newmarkt To Victoria Park,INN,Bus,6833.08269736869
+31839,79928,NZB,Inner Link Clockwise K Rd To Victoria Park,INN,Bus,3618.94166942323
+31840,79934,NZB,Inner Link Clockwise (VP),INN,Bus,12171.0046891604
+31841,80098,MEX,Parnell To Snells Beach,MEX,Bus,73821.489745507
+31842,80099,MEX,Snells Beach To Parnell,MEX,Bus,74544.4661843533
+31843,80101,NZB,Bayswater Wharf To Akoranga Station Via Takapuna,801,Bus,10070.3805595281
+31844,80102,NZB,Akoranga Station To Bayswater Wharf Via Takapuna,801,Bus,9901.29356289228
+31845,80201,NZB,Bayswater To City (Mayoral Dr),802,Bus,14313.6099356885
+31846,80202,NZB,City (Mayoral Dr) To Bayswater,802,Bus,14271.4977019329
+31847,80501,NZB,Devonport Wharf To Belmont Shops Via Ngataringa Rd,805,Bus,4113.57875956256
+31848,80502,NZB,Belmont Shops To Devonport Wharf Via Ngataringa Rd,805,Bus,4038.55828394316
+31849,80601,NZB,Devonport Wharf To Stanley Pt Loop,806,Bus,4151.97645503879
+31850,80701,NZB,Devonport Wharf To Cheltenham Loop,807,Bus,3908.38591050326
+31851,81401,NZB,Devonport Wharf To Akoranga Station Via Takapuna,814,Bus,9621.92388927259
+31852,81402,NZB,Akoranga Station To Devonport Wharf Via Takapuna,814,Bus,9533.98418265486
+31853,84201,NZB,Crown Hill To Smales Farm Station Via East Coast Rd,842,Bus,4684.3573034129
+31854,84202,NZB,Smales Farm Station To Crown Hill Via East Coast Rd,842,Bus,4357.51717441528
+31855,84303,NZB,Akoranga Station To Constellation Station Via Takapuna,843,Bus,11444.3719742144
+31856,84304,NZB,Constellation Station To Akoranga Station Via Takapuna,843,Bus,12176.7345236214
+31857,84501,RTH,Milford To Takapuna Via North Shore Hospital,845,Bus,7536.22683334838
+31858,84502,RTH,Takapuna To Milford Via North Shore Hospital,845,Bus,7286.04116985462
+31859,85601,RTH,Albany Station To Takapuna Via Beach Rd And Milford,856,Bus,26146.889786578
+31860,85602,RTH,Takapuna to Albany Station Via Milford And Beach Rd,856,Bus,26005.9801194044
+31861,85603,RTH,Mairangi Bay To Smales Farm Station Via Beach Rd And Milford,856,Bus,7286.59693542227
+31862,85604,RTH,Smales Farm Station To Mairangi Bay Via Milford And Beach Rd,856,Bus,6938.51970457942
+31863,85605,RTH,Albany Station To Browns Bay,856,Bus,11727.6637187757
+31864,85606,RTH,Browns Bay To Albany Station,856,Bus,11778.3892012701
+31865,86101,RTH,Long Bay To Constellation Station Via Bush Rd,861,Bus,17893.6367733244
+31866,86102,RTH,Constellation Station To Long Bay Via Bush Rd,861,Bus,17797.7147164277
+31867,86501,RTH,Browns Bay To Albany Station Via Oaktree Ave,865,Bus,5626.47559579116
+31868,86502,RTH,Albany Station To Browns Bay Via Oaktree Ave,865,Bus,5563.62028751938
+31869,86601,RTH,Albany Stn To Newmarket Via Ponsonby And Auckland Hospital,866,Bus,22438.5256476404
+31870,86602,RTH,Newmarket To Albany Station Via Auckland Hospital & Ponsonby,866,Bus,22380.0056567346
+31871,87101,NZB,Constellation Station To Takapuna Via Forrest Hill Rd,871,Bus,9484.75018184035
+31872,87102,NZB,Takapuna To Constellation Station Via Forrest Hill Rd,871,Bus,9298.36818074425
+31873,87104,NZB,Takapuna to Constellation Station Via Forrest Hill Rd,871,Bus,9298.36818074425
+31874,87801,RTH,Browns Bay To Constellation Station Via and East Coast Rd,878,Bus,12322.2603751546
+31875,87802,RTH,Constellation Station To Browns Bay Via East Coast Rd,878,Bus,12116.3537131427
+31876,87803,RTH,Northcross To Constellation Station Via East Coast Rd,878,Bus,6621.42627078076
+31877,87804,RTH,Constellation Station To Northcross Via East Coast Rd,878,Bus,6545.88977224701
+31878,88301,RTH,Schnapper Rock To Constellation Station,883,Bus,7824.58737201158
+31879,88302,RTH,Constellation Station To Schnapper Rock,883,Bus,6130.04634413757
+31880,88304,RTH,Constellation Station To Schnapper Rock (Full Loop),883,Bus,8117.50402979857
+31881,88401,RTH,Constellation Station To NHIE Loop Anticlockwise,884,Bus,9122.25965296973
+31882,88501,RTH,Constellation Station To NHIE Loop Clockwise,885,Bus,9675.22485345549
+31883,88801,RTH,Albany Heights Loop,888,Bus,8478.53441531405
+31884,88901,RTH,Albany Station To Constellation Station Via Hugh Green Dr,889,Bus,5466.49706245867
+31885,88902,RTH,Constellation Station To Albany Station Via Hugh Green Dr,889,Bus,5148.37690824474
+31886,90111,RTH,Smales Farm To Constellation Station Via Wairau Rd,901,Bus,7931.9099924917
+31887,90112,RTH,Constellation Station To Smales Farm Via Wairau Rd,901,Bus,8386.02505108717
+31888,90601,RTH,Constellation To Smales Farm Via Windy Ridge And Archers Rd,906,Bus,16260.9854417292
+32289,90602,RTH,Smales Farm To Constellation Via Archers Rd And Windy Ridge,906,Bus,14520.2853625896
+32290,90701,RTH,Campbells Bay To Constellation Station Via Sunnynook Station,907,Bus,8692.08995288944
+32291,90702,RTH,Constellation Station To Campbells Bay Via Sunnynook Station,907,Bus,9492.06884303998
+32292,91701,RTH,Birkenhead Wharf To Albany Station Via Glenfield Rd,917,Bus,19589.3160597185
+32293,91702,RTH,Albany Station To Birkenhead Wharf Via Glenfield Rd,917,Bus,19419.6073466168
+32294,91703,RTH,Birkenhead Wharf To Highbury,917,Bus,2021.73388187235
+32295,91704,RTH,Highbury to Birkenhead Wharf,917,Bus,2034.18734721967
+32296,92301,NZB,Akoranga Station To City (Mayoral Dr) Via Hillcrest,923,Bus,15292.138970578
+32297,92302,NZB,City (Mayoral Dr) To Akoranga Station Via Hillcrest,923,Bus,14886.2127167546
+32298,92304,NZB,Sylvan Ave To Akoranga Station,923,Bus,8675.74410038915
+32299,92401,NZB,Hillcrest To City (Mayoral Dr),924,Bus,13053.0527466901
+32300,92601,RTH,Glenfield To Akoranga Station Via Hillcrest West,926,Bus,9418.05378776258
+32301,92602,RTH,Akoranga Station To Glenfield Via Hillcrest West,926,Bus,9243.53364487329
+32302,92801,RTH,Northcote Point To Smales Farm Stn Via North Shore Hospital,928,Bus,6631.17121583122
+32303,92802,RTH,Smales Farm Stn To Northcote Point Via North Shore Hospital,928,Bus,6284.58878037456
+32304,93060,ATMB,Britomart To Gulf Harbour Ferry,FBGH,Bus,48569.5342351467
+32305,93101,RTH,Chatswood To University Of Auckland Via Customs St,931,Bus,15983.1718391701
+32306,93102,RTH,University Of Auckland To Chatswood Via Customs St,931,Bus,14515.6611538433
+32307,93301,RTH,Beach Haven Wharf To University Of Auckland Via Customs St,933,Bus,17656.0578736355
+32308,93302,RTH,University Of Auckland To Beach Haven Wharf Via Customs St,933,Bus,16210.9074832634
+32309,93901,RTH,Windy Ridge To University of Auckland Via Customs St,939,Bus,17188.4933896758
+32310,93902,RTH,University of Auckland To Windy Ridge Via Customs St,939,Bus,14718.7719457024
+32311,94101,RTH,Beach Haven To Takapuna Via Glenfield And Smales Farm Stn,941,Bus,14597.7884550232
+32312,94102,RTH,Takapuna To Beach Haven Smales Farm Station And Glenfield,941,Bus,14473.3534281011
+32313,94104,RTH,Smales Farm To Beach Haven And Takapuna Anticlockwise (Late),941,Bus,21721.4742253709
+32314,94106,RTH,Smales Farm to Beach Haven (Late Night),941,Bus,11132.6929303571
+32315,95060,ATMB,Panmure Station To Half Moon Bay Terminal,FBHM,Bus,8412.64368949218
+32316,95061,ATMB,Half Moon Bay Terminal To Panmure Station,FBHM,Bus,8492.19038880169
+32317,96603,RTH,Beach Haven To Newmarket Via Ponsonby And Auckland Hospital,966,Bus,21945.8796929545
+32318,96606,RTH,Newmaket To Beach Haven Via Auckland Hospital And Ponsonby R,966,Bus,21045.4794465252
+32319,96607,RTH,Highbury To Newmarket Via Ponsonby And Auckland Hospital,966,Bus,13103.4386194026
+32320,96608,RTH,Newmarket To Highbury Via Auckland Hospital and Ponsonby Rd,966,Bus,12468.4831328221
+32321,98109,GBT,Waiwera To Hibiscus Coast Station,981,Bus,13833.4872416722
+32322,98110,GBT,Hibiscus Coast Station To Waiwera,981,Bus,14025.5335430266
+32323,98111,GBT,Orewa To Hibiscus Coast Station,981,Bus,6627.21805048221
+32324,98112,GBT,Hibiscus Coast Station To Orewa,981,Bus,6349.99845712386
+32325,98113,GBT,Orewa North To Hibiscus Coast Station,981,Bus,7887.01853329593
+32326,98114,GBT,Hibiscus Coast Station To Orewa North,981,Bus,8116.12778855439
+32327,98207,GBT,Gulf Harbour To Hibiscus Coast Station,982,Bus,20170.418416766
+32328,98208,GBT,Hibiscus Coast Station To Gulf Harbour,982,Bus,20654.5221296431
+32329,98209,GBT,Manly To Hibiscus Coast Station,982,Bus,12713.3038733847
+32330,98210,GBT,Hibiscus Coast Station To Manly,982,Bus,12990.1409916055
+32331,98303,GBT,Gulf Harbour To Hibiscus Coast Station Via Vipond Rd,983,Bus,22035.9387905628
+32332,98304,GBT,Hibiscus Coast Station To Gulf Harbour Via Vipond Rd,983,Bus,20540.1659559436
+32333,98403,GBT,Orewa To Hibiscus Coast Station Via Maygrove,984,Bus,15748.2085424239
+32334,98404,GBT,Hibiscus Coast Station To Orewa Via Maygrove,984,Bus,7617.44175222248
+32335,98503,GBT,Orewa To Hibiscus Coast Station Via Millwater,985,Bus,11286.8115724132
+32336,98504,GBT,Hibiscus Coast Station To Orewa Via Millwater,985,Bus,9271.61609589298
+32337,98603,GBT,Hibiscus Coast Station To Albany Station Via Dariy Flat,986,Bus,21540.2148591388
+32338,98604,GBT,Albany Station To Hibiscus Coast Station Via Dairy Flat,986,Bus,21501.9226745032
+32339,98803,GBT,Gulf Harbour Ferry To The Plaza Via Army Bay,988,Bus,13067.6200954115
+32340,98804,GBT,The Plaza To Gulf Harbour Ferry Via Army Bay,988,Bus,13045.6963440352
+32341,98805,GBT,Gulf Harbour Ferry To Hibiscus Coast Stn,988,Bus,22379.8972762282
+32342,98806,GBT,Hibiscus Coast Stn To Gulf Harbour Ferry,988,Bus,22374.8536280287
+32343,98901,BAYES,Hibiscus Coast Station To Milldale Loop,989,Bus,7511.29098242674
+32344,99501,RTH,Warkworth To Hibiscus Coast Station,995,Bus,32757.7559139444
+32345,99502,RTH,Hibiscus Coast Station To Warkworth,995,Bus,32933.7394890787
+32346,99605,RTH,Algies Bay To Warkworth Via Snells Beach,996,Bus,13893.5808785599
+32347,99701,RTH,Warkworth To Omaha Via Matakana And Pt Wells,997,Bus,21408.6646889306
+32348,99703,RTH,Warkworth To Omaha Via Matakana And Pt Wells (AM School),997,Bus,22461.2315633421
+32349,99705,RTH,Warkworth To Omaha Via Matakana And Pt Wells (PM School),997,Bus,21585.8167709271
+32350,99801,RTH,Wellsford To Warkworth,998,Bus,20541.7372483231
+32351,99802,RTH,Warkworth To Wellsford,998,Bus,21177.9387771798
+32352,99901,RTH,Warkworth Loop,999,Bus,7996.97888364456
