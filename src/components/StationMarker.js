@@ -1,4 +1,3 @@
-// src/components/StationMarker.js
 import React from 'react';
 import { Marker, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
@@ -18,14 +17,16 @@ const icons = {
   }),
 };
 
-const StationMarker = ({ station, iconType, measureActive, moveMode, onDragStart, onDragEnd, onClick }) => {
+const StationMarker = ({ station, iconType, measureActive, moveMode, deleteMode, onDragStart, onDragEnd, onClick, onDelete }) => {
   const handleDragEnd = (e) => {
     const newPosition = e.target.getLatLng();
     onDragEnd(station, newPosition);
   };
 
   const handleClick = () => {
-    if (measureActive) {
+    if (deleteMode) {
+      onDelete(station); // Trigger deletion when delete mode is active
+    } else if (measureActive) {
       onClick({ lat: station.STOPLAT, lng: station.STOPLON });
     }
   };
@@ -42,7 +43,7 @@ const StationMarker = ({ station, iconType, measureActive, moveMode, onDragStart
       eventHandlers={{
         dragstart: handleDragStart, // Disable map dragging when marker dragging starts
         dragend: handleDragEnd, // Save the new position on drag end
-        click: handleClick, // Handle measurement clicks
+        click: handleClick, // Handle click for delete or measure
       }}
     >
       <Tooltip>{station.STOPNAME}</Tooltip>

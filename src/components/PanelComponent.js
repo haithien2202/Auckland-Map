@@ -7,9 +7,12 @@ const PanelComponent = ({
   setSelectedStationType,
   measureActive,
   addMode,
+  moveMode,
+  deleteMode,
   handleMeasureToggle,
   handleEditToggle,
   handleAddToggle,
+  handleDeleteToggle,
   handleMoveToggle,
 }) => (
   <div className="panel">
@@ -31,8 +34,8 @@ const PanelComponent = ({
       </Button>
 
       <Dropdown as={ButtonGroup}>
-        <Button variant={addMode ? 'danger' : 'secondary'} onClick={handleEditToggle}>
-          {addMode ? 'Cancel' : 'Edit'}
+        <Button variant={addMode || moveMode || deleteMode ? 'danger' : 'secondary'} onClick={handleEditToggle}>
+          {addMode || moveMode || deleteMode ? 'Cancel' : 'Edit'}
         </Button>
 
         <Dropdown.Toggle split variant="secondary" id="dropdown-split-basic" />
@@ -40,9 +43,7 @@ const PanelComponent = ({
         <Dropdown.Menu>
           <Dropdown.Item onClick={handleAddToggle}>Add</Dropdown.Item>
           <Dropdown.Item onClick={handleMoveToggle}>Move</Dropdown.Item>
-          <Dropdown.Item onClick={() => alert('Delete functionality is not yet implemented.')}>
-            Delete
-          </Dropdown.Item>
+          <Dropdown.Item onClick={handleDeleteToggle}>Delete</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
     </div>
