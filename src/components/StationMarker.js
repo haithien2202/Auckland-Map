@@ -17,7 +17,7 @@ const icons = {
   }),
 };
 
-const StationMarker = ({ station, iconType, measureActive, moveMode, deleteMode, onDragStart, onDragEnd, onClick, onDelete }) => {
+const StationMarker = ({ station, iconType, measureActive, moveMode, deleteMode, onDragStart, onDragEnd, onClick, onDelete, onSelectStop }) => {
   const handleDragEnd = (e) => {
     const newPosition = e.target.getLatLng();
     onDragEnd(station, newPosition);
@@ -29,6 +29,12 @@ const StationMarker = ({ station, iconType, measureActive, moveMode, deleteMode,
     } else if (measureActive) {
       onClick({ lat: station.STOPLAT, lng: station.STOPLON });
     }
+    // Trigger stop selection for display in panel
+    onSelectStop({
+      name: station.STOPNAME,
+      lat: station.STOPLAT,
+      lon: station.STOPLON,
+    });
   };
 
   const handleDragStart = (e) => {
@@ -39,11 +45,11 @@ const StationMarker = ({ station, iconType, measureActive, moveMode, deleteMode,
     <Marker
       position={[station.STOPLAT, station.STOPLON]}
       icon={icons[iconType]}
-      draggable={moveMode} // Enable dragging only when moveMode is active
+      draggable={moveMode}
       eventHandlers={{
-        dragstart: handleDragStart, // Disable map dragging when marker dragging starts
-        dragend: handleDragEnd, // Save the new position on drag end
-        click: handleClick, // Handle click for delete or measure
+        dragstart: handleDragStart,
+        dragend: handleDragEnd,
+        click: handleClick,
       }}
     >
       <Tooltip>{station.STOPNAME}</Tooltip>

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { MapContainer, TileLayer, Polyline, Tooltip, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './App.css';
-import { Container, Row, Col, Modal, Button } from 'react-bootstrap';
+import { Container, Modal, Button } from 'react-bootstrap';
 import StationMarker from './components/StationMarker'; 
 import MeasureAndEditEvents from './components/MeasureAndEditEvents';
 import NavbarComponent from './components/NavbarComponent';
@@ -10,6 +10,7 @@ import PanelComponent from './components/PanelComponent';
 import ModalComponent from './components/ModalComponent';
 import useFetchStations from './hooks/FetchStations';
 import { calculateDistanceInFeet } from './utils/calculateDistance';
+import { saveStop, deleteStop, updateStopLocation } from './services/stopService';
 
 function App() {
   const { busStop, trainStation, setBusStop, setTrainStation } = useFetchStations(); 
@@ -21,108 +22,52 @@ function App() {
   const [points, setPoints] = useState([]);
   const [showEditOptions, setShowEditOptions] = useState(false);
   const [measurements, setMeasurements] = useState([]);
-  const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false); // Track delete confirmation
-  const [stopToDelete, setStopToDelete] = useState(null); // Track the stop to delete
+  const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false);
+  const [stopToDelete, setStopToDelete] = useState(null);
   const [draggingMap, setDraggingMap] = useState(true);
 
   const [showModal, setShowModal] = useState(false);
   const [newStop, setNewStop] = useState(null);
   const [stopName, setStopName] = useState('');
+  const [selectedStop, setSelectedStop] = useState(null);
 
-  // Utility to sync data between tabs using localStorage
-  const updateLocalStorage = (key, value) => {
-    localStorage.setItem(key, JSON.stringify(value));
+  // Clear selected stop info
+  const handleClearStop = () => {
+    setSelectedStop(null);
   };
 
-  const handleStorageChange = useCallback((event) => {
-    if (event.key === 'busStopData') {
-      const updatedBusStops = JSON.parse(event.newValue);
-      setBusStop(updatedBusStops);
-    }
-
-    if (event.key === 'trainStationData') {
-      const updatedTrainStations = JSON.parse(event.newValue);
-      setTrainStation(updatedTrainStations);
-    }
-  }, [setBusStop, setTrainStation]);
-
-  useEffect(() => {
-    window.addEventListener('storage', handleStorageChange);
-    return () => {
-      window.removeEventListener('storage', handleStorageChange);
-    };
-  }, [handleStorageChange]);
-
-  useEffect(() => {
-    updateLocalStorage('busStopData', busStop);
-  }, [busStop]);
-
-  useEffect(() => {
-    updateLocalStorage('trainStationData', trainStation);
-  }, [trainStation]);
-
+  // Adding a new station
   const addStation = (latlng) => {
     const newStopData = {
-      OBJECTID: Math.random(),  // Generate a temporary unique identifier
+      OBJECTID: Math.random(),  
       STOPLAT: latlng.lat,
       STOPLON: latlng.lng,
-      STOPNAME: '',  // Stop name will be provided by the user in the modal
+      STOPNAME: '',  
     };
-
     setNewStop(newStopData);
     setStopName('');
     setShowModal(true);
     setAddMode(false);
   };
 
+  // Saving the new or edited station
   const handleSaveStop = () => {
-    const stopData = {
-      stopName: stopName,
-      lat: newStop.STOPLAT,
-      lon: newStop.STOPLON,
-      stopType: selectedStationType,
-    };
-
-    fetch('http://127.0.0.1:5000/save-stop', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(stopData),
-    })
-      .then(response => response.json())
-      .then(data => {
-        if (data.type === "Feature") {
-          const updatedStop = {
-            ...newStop,
-            STOPNAME: stopName,
-            STOPLAT: data.properties.STOPLAT,
-            STOPLON: data.properties.STOPLON,
-            OBJECTID: data.properties.OBJECTID,
-          };
-          if (selectedStationType === 'busStops') {
-            setBusStop(prevStops => [...prevStops, updatedStop]);
-            updateLocalStorage('busStopData', [...busStop, updatedStop]);
-          } else {
-            setTrainStation(prevStations => [...prevStations, updatedStop]);
-            updateLocalStorage('trainStationData', [...trainStation, updatedStop]);
-          }
-          setNewStop(null);
+    saveStop(newStop, stopName, selectedStationType, setBusStop, setTrainStation, busStop, trainStation)
+      .then(success => {
+        if (success) {
           setShowModal(false);
-        } else {
-          console.error('Failed to save the stop:', data.error);
+          setNewStop(null);
         }
-      })
-      .catch(error => {
-        console.error('Error:', error);
       });
   };
 
+  // Cancel stop editing
   const handleCancelStop = () => {
     setNewStop(null);
     setShowModal(false);
   };
 
+  // Add a measurement point
   const addMeasurementPoint = useCallback((latlng) => {
     setPoints((prevPoints) => {
       if (prevPoints.length < 2) {
@@ -132,6 +77,7 @@ function App() {
     });
   }, []);
 
+  // Calculate the distance between two points
   useEffect(() => {
     if (points.length === 2) {
       const dist = calculateDistanceInFeet(points[0], points[1]);
@@ -142,107 +88,78 @@ function App() {
     }
   }, [points, measurements]);
 
-  // Update bus stop or train station on drag end
+  // Update station (bus or train) position on drag end and update measurements
   const handleMarkerDragEnd = useCallback((station, newPosition) => {
-    const updatedStops = (selectedStationType === 'busStops') 
-      ? busStop.map((stop) => stop.OBJECTID === station.OBJECTID
+    const updatedStops = selectedStationType === 'busStops'
+      ? busStop.map(stop => stop.OBJECTID === station.OBJECTID
         ? { ...stop, STOPLAT: newPosition.lat, STOPLON: newPosition.lng }
         : stop)
-      : trainStation.map((stop) => stop.OBJECTID === station.OBJECTID
+      : trainStation.map(stop => stop.OBJECTID === station.OBJECTID
         ? { ...stop, STOPLAT: newPosition.lat, STOPLON: newPosition.lng }
         : stop);
 
     if (selectedStationType === 'busStops') {
       setBusStop(updatedStops);
-      updateLocalStorage('busStopData', updatedStops);
     } else {
       setTrainStation(updatedStops);
-      updateLocalStorage('trainStationData', updatedStops);
     }
 
-    // Send updated location to backend
-    const updatedStopData = {
-      OBJECTID: station.OBJECTID,
-      STOPLAT: newPosition.lat,
-      STOPLON: newPosition.lng,
-      stopType: selectedStationType
-    };
+    // Update linked measurements
+    const updatedMeasurements = measurements.map((measurement) => {
+      const updatedPoints = measurement.points.map((point) => {
+        if (point.station && point.station.OBJECTID === station.OBJECTID) {
+          return newPosition;
+        }
+        return point;
+      });
 
-    fetch('http://127.0.0.1:5000/update-stop-location', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(updatedStopData),
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        console.log(`${selectedStationType} location updated successfully.`);
-      } else {
-        console.error('Failed to update stop location:', data.message);
-      }
-    })
-    .catch(error => {
-      console.error('Error updating stop location:', error);
+      // Recalculate the distance for updated points
+      const newDistance = calculateDistanceInFeet(updatedPoints[0], updatedPoints[1]);
+      return { ...measurement, points: updatedPoints, distance: newDistance };
     });
 
-    setDraggingMap(true); // Re-enable map dragging
-  }, [busStop, trainStation, selectedStationType, setBusStop, setTrainStation]);
+    setMeasurements(updatedMeasurements);
 
+    // Update stop position on the backend
+    updateStopLocation(station, newPosition, selectedStationType)
+      .then(() => setDraggingMap(true));
+  }, [busStop, trainStation, measurements, selectedStationType, setBusStop, setTrainStation]);
+
+  // Disable map dragging on marker drag start
   const handleMarkerDragStart = useCallback(() => {
     setDraggingMap(false);
   }, []);
 
+  // Delete a station
   const handleDeleteStop = (station) => {
-    setStopToDelete(station);  // Store the stop to be deleted
-    setShowDeleteConfirmation(true);  // Show confirmation modal
+    setStopToDelete(station);
+    setShowDeleteConfirmation(true); 
   };
 
+  // Confirm deletion of the station
   const confirmDeleteStop = () => {
-    if (!stopToDelete) return;
-
-    const deleteData = {
-      STOPCODE: stopToDelete.STOPCODE,  // Use STOPCODE to identify stop
-      stopType: selectedStationType,
-    };
-
-    // Send a DELETE request to the backend
-    fetch('http://127.0.0.1:5000/delete-stop', {
-      method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(deleteData),
-    })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        console.log('Stop deleted successfully.');
-
-        // Remove the stop from the frontend state
-        if (selectedStationType === 'busStops') {
-          setBusStop(busStop.filter(stop => stop.OBJECTID !== stopToDelete.OBJECTID));
-        } else {
-          setTrainStation(trainStation.filter(stop => stop.OBJECTID !== stopToDelete.OBJECTID));
+    deleteStop(stopToDelete, selectedStationType, setBusStop, setTrainStation, busStop, trainStation)
+      .then(success => {
+        if (success) {
+          // Remove measurements linked to this station
+          const updatedMeasurements = measurements.filter((measurement) => {
+            return !measurement.points.some(point => point.station && point.station.OBJECTID === stopToDelete.OBJECTID);
+          });
+  
+          setMeasurements(updatedMeasurements);
+          setStopToDelete(null);
+          setShowDeleteConfirmation(false);
         }
-
-        setStopToDelete(null);
-        setShowDeleteConfirmation(false);  // Close confirmation modal
-      } else {
-        console.error('Failed to delete stop:', data.message);
-      }
-    })
-    .catch(error => {
-      console.error('Error deleting stop:', error);
-    });
+      });
   };
 
+  // Cancel the delete confirmation modal
   const cancelDeleteStop = () => {
-    setStopToDelete(null);  // Clear the stop to delete
-    setShowDeleteConfirmation(false);  // Close confirmation modal
+    setStopToDelete(null);
+    setShowDeleteConfirmation(false);  
   };
 
+  // Render stations (bus stops or train stations)
   const renderStations = useMemo(() => {
     if (selectedStationType === 'busStops') {
       return busStop.map((station) => (
@@ -252,11 +169,12 @@ function App() {
           iconType="busStopIcon"
           measureActive={measureActive}
           moveMode={moveMode}
-          deleteMode={deleteMode}  // Pass deleteMode to StationMarker
+          deleteMode={deleteMode}
           onDragStart={handleMarkerDragStart}
           onDragEnd={handleMarkerDragEnd}
-          onClick={addMeasurementPoint}  // Handle measurement clicks
-          onDelete={handleDeleteStop}  // Handle delete clicks
+          onClick={addMeasurementPoint}
+          onDelete={handleDeleteStop}
+          onSelectStop={setSelectedStop}  // Pass selected stop handler
         />
       ));
     } else if (selectedStationType === 'trainStations') {
@@ -267,17 +185,25 @@ function App() {
           iconType="trainStationIcon"
           measureActive={measureActive}
           moveMode={moveMode}
-          deleteMode={deleteMode}  // Pass deleteMode to StationMarker
+          deleteMode={deleteMode}
           onDragStart={handleMarkerDragStart}
           onDragEnd={handleMarkerDragEnd}
-          onClick={addMeasurementPoint}  // Handle measurement clicks
-          onDelete={handleDeleteStop}  // Handle delete clicks
+          onClick={addMeasurementPoint}
+          onDelete={handleDeleteStop}
+          onSelectStop={setSelectedStop}  // Pass selected stop handler
         />
       ));
     }
   }, [selectedStationType, busStop, trainStation, measureActive, moveMode, deleteMode, handleMarkerDragStart, handleMarkerDragEnd, addMeasurementPoint]);
-  
 
+
+  const handleCancelMode = () => {
+    setMoveMode(false);
+    setDeleteMode(false);
+    setAddMode(false);
+  };
+
+  // Handling different modes (Measure, Add, Move, Delete)
   const handleMeasureToggle = () => {
     setMeasureActive(!measureActive);
     setMoveMode(false);
@@ -316,6 +242,7 @@ function App() {
     setShowEditOptions(false);
   };
 
+  // Control dragging of the map during marker drag
   const MapEvents = () => {
     const map = useMap();
 
@@ -333,61 +260,60 @@ function App() {
   return (
     <div className="App">
       <NavbarComponent />
-      <Container fluid className="main-content">
-        <Row className="h-100">
-          <Col xs={2} className="panel">
-            <PanelComponent
-              selectedStationType={selectedStationType}
-              setSelectedStationType={setSelectedStationType}
-              measureActive={measureActive}
-              addMode={addMode}
-              moveMode={moveMode}
-              deleteMode={deleteMode}
-              handleMeasureToggle={handleMeasureToggle}
-              handleEditToggle={handleEditToggle}
-              handleAddToggle={handleAddToggle}
-              handleMoveToggle={handleMoveToggle}
-              handleDeleteToggle={handleDeleteToggle}
-              showEditOptions={showEditOptions}        
+      <Container fluid className="main-content d-flex">
+        {/* Panel on the left side */}
+        <PanelComponent
+          selectedStationType={selectedStationType}
+          setSelectedStationType={setSelectedStationType}
+          measureActive={measureActive}
+          addMode={addMode}
+          moveMode={moveMode}
+          deleteMode={deleteMode}
+          handleMeasureToggle={handleMeasureToggle}
+          handleEditToggle={handleEditToggle}
+          handleAddToggle={handleAddToggle}
+          handleMoveToggle={handleMoveToggle}
+          handleDeleteToggle={handleDeleteToggle}
+          showEditOptions={showEditOptions}
+          selectedStop={selectedStop}
+          handleClearStop={handleClearStop} 
+          handleCancelModes={handleCancelMode}
+        />
+
+        {/* Map on the right side */}
+        <div className="map-container flex-grow-1">
+          <MapContainer center={[-36.8485, 174.7633]} zoom={10} scrollWheelZoom={true} className="map">
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
-          </Col>
+            <MapEvents />
 
-          <Col xs={10} className="map-col">
-            <div className="map-container">
-              <MapContainer center={[-36.8485, 174.7633]} zoom={10} scrollWheelZoom={true} className="map">
-                <TileLayer
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                />
-                <MapEvents />
+            <MeasureAndEditEvents 
+              addMode={addMode} 
+              measureActive={measureActive} 
+              addStation={addStation} 
+              addMeasurementPoint={addMeasurementPoint}
+            />
 
-                <MeasureAndEditEvents 
-                  addMode={addMode} 
-                  measureActive={measureActive} 
-                  addStation={addStation} 
-                  addMeasurementPoint={addMeasurementPoint}
-                />
+            {measurements.map((measurement, index) => (
+              <Polyline
+                key={index}
+                positions={measurement.points}
+                color="red"
+                eventHandlers={{
+                  dblclick: () => setMeasurements(measurements.filter((_, i) => i !== index)),
+                }}
+              >
+                <Tooltip permanent>
+                  Distance: {measurement.distance} ft
+                </Tooltip>
+              </Polyline>
+            ))}
 
-                {measurements.map((measurement, index) => (
-                  <Polyline
-                    key={index}
-                    positions={measurement.points}
-                    color="red"
-                    eventHandlers={{
-                      dblclick: () => setMeasurements(measurements.filter((_, i) => i !== index)),
-                    }}
-                  >
-                    <Tooltip permanent>
-                      Distance: {measurement.distance} ft
-                    </Tooltip>
-                  </Polyline>
-                ))}
-
-                {renderStations}
-              </MapContainer>
-            </div>
-          </Col>
-        </Row>
+            {renderStations}
+          </MapContainer>
+        </div>
       </Container>
 
       {/* Delete Confirmation Modal */}
